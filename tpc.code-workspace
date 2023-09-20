@@ -1,0 +1,23 @@
+{
+	"folders": [
+		{
+			"path": ".."
+		},
+		{
+			"path": "../../cpp_programs"
+		},
+		{
+			"path": "../../../Desktop/cyberstorm-main"
+		}
+	],
+	"settings": {
+		"files.associations": {
+			"bitset": "c"
+		},
+		"liveServer.settings.multiRootWorkspaceName": "tpc",
+		"[python]": {
+			"editor.defaultFormatter": "ms-python.python"
+		},
+		"python.formatting.provider": "none"
+	}
+}
