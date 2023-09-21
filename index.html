@@ -39,18 +39,14 @@
         
          
         <a  href="mycvcyrinefk.pdf" target="_blank"><P id="cv">Download my CV</P></a>
-        </div></div>
-<div class="homeimg">
-<img src="hack.png" alt="" id="img">
-     
-
-
+       
+      </div>
+        <img src="hack.png" alt="" id="img">
     </div>
+
+
+    
   </section>
-
-
-
-
 
   <section class='skills' id="skills">
     <h2>My Skills</h2>
@@ -222,9 +218,46 @@
   </section>
 
   <a href="#about" ><img src="img1.png" alt="" id="img1"></a>
+  <script>
+    var colors=['#f1000','#f76c6c','#00b0bb'];
+    function init(){
+      document.onmousemove = anim;
+    }
+  
+    function anim(e){
+      var circle=document.createElement('div');
+      circle.setAttribute('class','circle');
+      document.body.appendChild(circle);
+      
+      circle.style.left = e.clientX + 'px';
+      circle.style.top = e.clientY + 'px';
+  
 
+      var color=Math.floor(Math.random()*colors.length);
+      circle.style.borderColor=colors[color];
+      
+      circle.style.transition="all 0.4s linear 0s";
+      circle.style.left=circle.offsetLeft -0 + 'px';
+      circle.style.top=circle.offsetTop -0 + 'px';
+      circle.style.width='50px';
+      circle.style.height='50px';
+      circle.style.borderWidth='5px'; 
+      circle.style.opacity=0; 
+       
+      circle.style.position = 'absolute'; 
+      circle.style.zIndex = '9999'; 
+      setTimeout(function() {
+        document.body.removeChild(circle);
+      }, 400);
+    }
+  
+    window.onload=init;
+</script>
 
-</body>
-
-</html>
+  
+  
+  </body>
+  </html>
+  
+  
 
