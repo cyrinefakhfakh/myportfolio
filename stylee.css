@@ -406,7 +406,6 @@ p {
   margin-top: 10px;
   margin-left: 400px;
   margin-bottom: 200px;
-  shadow: 50px 10px 10px rgba(147, 32, 196, 0.1);
   transition: all 0.3s ease-out;
 }
 
