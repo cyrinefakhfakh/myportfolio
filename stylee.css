@@ -52,7 +52,7 @@ nav {
 
 /* List Items (Navigation Links) */
 .nav-item {
-  margin-right: 50px;
+  margin-right: 20px;
 }
 
 /* Style for Anchor (Link) inside List Item */
@@ -516,7 +516,7 @@ li {
 /* Add media queries for larger screen sizes */
 @media screen and (min-width: 1200px) {
   .nav-item {
-    margin-right: 350px;
+    margin-right: 50px;
   }
   
   .detail {
