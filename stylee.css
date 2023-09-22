@@ -46,20 +46,20 @@ nav {
 .nav-list {
   list-style: none;
   margin: 0;
-  padding: 0;
+  padding: 10;
   display: flex;
 }
 
 /* List Items (Navigation Links) */
 .nav-item {
-  margin-right: 250px;
+  margin-right: 50px;
 }
 
 /* Style for Anchor (Link) inside List Item */
 .nav-item a {
   text-decoration: none;
   color: white;
-  font-weight: bold;
+  font-size: 10px;
 }
 
 /* Hover effect for Navigation Links */
