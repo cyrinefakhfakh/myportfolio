@@ -52,14 +52,14 @@ nav {
 
 /* List Items (Navigation Links) */
 .nav-item {
-  margin-right: 20px;
+  margin-right: 40px;
 }
 
 /* Style for Anchor (Link) inside List Item */
 .nav-item a {
   text-decoration: none;
   color: white;
-  font-size: 10px;
+  font-size: 20px;
 }
 
 /* Hover effect for Navigation Links */
@@ -516,11 +516,11 @@ li {
 /* Add media queries for larger screen sizes */
 @media screen and (min-width: 1200px) {
   .nav-item {
-    margin-right: 50px;
+    margin-right: 30px;
   }
   
   .detail {
-    margin-left: 400px;
+    margin-left: 200px;
   }
   
   #img {
