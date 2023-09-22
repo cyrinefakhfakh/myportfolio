@@ -286,40 +286,44 @@
 
 
 
-  <script>
-    var colors=['#f1000','#f76c6c','#00b0bb'];
-    function init(){
-      document.onmousemove = anim;
-    }
-  
-    function anim(e){
-      var circle=document.createElement('div');
-      circle.setAttribute('class','circle');
-      document.body.appendChild(circle);
-      
-      circle.style.left = e.clientX + 'px';
-      circle.style.top = e.clientY + 'px';
-  
+<script>
+  var colors=['#f1000','#f76c6c','#00b0bb'];
+  function init(){
+    var sections = document.querySelectorAll('section'); // Select all sections in the document
+    sections.forEach(function(section) {
+      section.onmousemove = anim;
+    });
+  }
 
-      var color=Math.floor(Math.random()*colors.length);
-      circle.style.borderColor=colors[color];
-      
-      circle.style.transition="all 0.4s linear 0s";
-      circle.style.left=circle.offsetLeft -0 + 'px';
-      circle.style.top=circle.offsetTop -0 + 'px';
-      circle.style.width='50px';
-      circle.style.height='50px';
-      circle.style.borderWidth='5px'; 
-      circle.style.opacity=0; 
-      circle.style.position = 'absolute'; 
-      circle.style.zIndex = '9999'; 
-      setTimeout(function() {
-        document.body.removeChild(circle);
-      }, 200);
-    }
-  
-    window.onload=init;
+  function anim(e){
+    var circle=document.createElement('div');
+    circle.setAttribute('class','circle');
+    document.body.appendChild(circle);
+
+    circle.style.left = e.clientX + 'px';
+    circle.style.top = e.clientY + 'px';
+
+
+    var color=Math.floor(Math.random()*colors.length);
+    circle.style.borderColor=colors[color];
+
+    circle.style.transition="all 0.4s linear 0s";
+    circle.style.left=circle.offsetLeft -0 + 'px';
+    circle.style.top=circle.offsetTop -0 + 'px';
+    circle.style.width='50px';
+    circle.style.height='50px';
+    circle.style.borderWidth='5px'; 
+    circle.style.opacity=0; 
+    circle.style.position = 'absolute'; 
+    circle.style.zIndex = '9999'; 
+    setTimeout(function() {
+      document.body.removeChild(circle);
+    }, 200);
+  }
+
+  window.onload=init;
 </script>
+
 <script>
   var scaryAudio = document.getElementById("scaryAudio");
 
