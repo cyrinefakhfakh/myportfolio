@@ -52,14 +52,14 @@ nav {
 
 /* List Items (Navigation Links) */
 .nav-item {
-  margin-right: 30px;
+  margin-right: 50px;
 }
 
 /* Style for Anchor (Link) inside List Item */
 .nav-item a {
   text-decoration: none;
   color: white;
-  font-size: 50px;
+  font-size: 30px;
 }
 
 /* Hover effect for Navigation Links */
