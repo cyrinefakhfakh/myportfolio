@@ -39,6 +39,34 @@
         
          
         <a  href="mycvcyrinefk.pdf" target="_blank"><P id="cv">Download my CV</P></a>
+        <div id="jump-scare" style="display: none;">
+  <img src="giphy.gif" alt="Jump Scare" id="gif-image">
+</div>
+
+<button id="button-jump-scare">Click me</button>
+
+
+<script>
+document.getElementById('button-jump-scare').addEventListener('click', function() {
+  var jumpScareDiv = document.getElementById('jump-scare');
+  var gifImage = document.getElementById('gif-image');
+
+  jumpScareDiv.style.display = 'block'; // Show the fullscreen div
+
+  // Play the GIF
+  gifImage.style.display = 'block';
+
+  // Hide the jump scare after 5 seconds
+  setTimeout(function() {
+    jumpScareDiv.style.display = 'none';
+    gifImage.style.display = 'none';
+  }, 5000); // 5000 milliseconds (5 seconds)
+});
+
+
+
+</script>
+
        
       </div>
       <img src="hack.png" alt="" id="img" onmouseover="playScarySound()" >
