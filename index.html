@@ -47,18 +47,7 @@
           <source src="scream-with-echo-46585.mp3" type="audio/mpeg">
           
         </audio>
-        <script>
-          var scaryAudio = document.getElementById("scaryAudio");
         
-          function playScarySound() {
-            scaryAudio.play();
-          }
-        
-          function stopScarySound() {
-            scaryAudio.pause();
-            scaryAudio.currentTime = 0;
-          }
-        </script>
         
     </div>
 
@@ -322,7 +311,6 @@
       circle.style.height='50px';
       circle.style.borderWidth='5px'; 
       circle.style.opacity=0; 
-       
       circle.style.position = 'absolute'; 
       circle.style.zIndex = '9999'; 
       setTimeout(function() {
@@ -332,7 +320,18 @@
   
     window.onload=init;
 </script>
+<script>
+  var scaryAudio = document.getElementById("scaryAudio");
 
+  function playScarySound() {
+    scaryAudio.play();
+  }
+
+  function stopScarySound() {
+    scaryAudio.pause();
+    scaryAudio.currentTime = 0;
+  }
+</script>
   
   
   </body>
