@@ -151,7 +151,7 @@ a {
 }
 
 #img:hover {
-  transform: scale(10);
+  transform:rotate3d(1, 1, 1, 18deg);
 }
 
 .wrapper .button {
@@ -566,4 +566,5 @@ li {
   max-height: 100%;
   margin: auto;
   display: block;
+  border: none;
 }
