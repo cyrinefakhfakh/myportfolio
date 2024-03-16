@@ -13,7 +13,7 @@ body {
   background-image: url("port.jpg");
   background-size: cover;
   opacity: 0.9;
-  cursor: url('eror.png');}
+ }
   
 
 /* Header styles */
@@ -284,7 +284,7 @@ p {
 
 .container .servicebox {
   flex: 1 1 30rem;
-  background-color: #44107a;
+  background-color: #130423;
   padding: 3rem 2rem 4rem;
   border-radius: 2rem;
   text-align: center;
